@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Compact | Service Level Agreement</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="doc-container">
+        <div class="doc-header">
+            <a href="index.html" class="back-btn">
+                <span class="back-arrow">←</span>
+                BACK TO HUB
+            </a>
+            <button onclick="generatePDF()" class="btn" style="cursor: pointer;">
+                EXPORT AS PDF
+            </button>
+        </div>
+
+        <div class="doc-content" id="sla-content">
+            <div class="doc-section">
+                <h1 style="text-align: center; margin-bottom: 0.5rem;" contenteditable="true">THE COMPACT</h1>
+                <p style="text-align: center; color: var(--electric-cyan); font-size: 1.2rem; font-family: var(--font-display); margin-bottom: 3rem;" contenteditable="true">
+                    SERVICE LEVEL AGREEMENT
+                </p>
+                <p style="text-align: center; font-style: italic; color: #A0D8E0; margin-bottom: 1rem;" contenteditable="true">
+                    Between: Development Team & Castel Malawi Ltd.
+                </p>
+                <p style="text-align: center; font-weight: 600; color: var(--electric-cyan);" contenteditable="true">
+                    Effective Date: February 2026
+                </p>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">1. PROJECT OVERVIEW</h2>
+                <p contenteditable="true">
+                    This Service Level Agreement (SLA) outlines the terms, deliverables, timeline, and commercial 
+                    commitments for the development and deployment of the Castel-Wrld Digital Ecosystem. This 
+                    agreement ensures transparency, accountability, and mutual understanding between both parties.
+                </p>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">2. SCOPE OF SERVICES</h2>
+                <p contenteditable="true">The development team commits to delivering the following services:</p>
+                <ul>
+                    <li contenteditable="true"><strong>Full-Stack Web Development:</strong> Complete design and development of a mobile-first, high-performance website with B2B ordering capabilities, asset tracking, and interactive mapping features.</li>
+                    <li contenteditable="true"><strong>Digital Brand Enhancement:</strong> Modernization of visual identity including logos, color schemes, and typography optimized for digital platforms.</li>
+                    <li contenteditable="true"><strong>Search Engine Optimization (SEO):</strong> Implementation of technical SEO best practices to ensure top search rankings for relevant keywords in the Malawian market.</li>
+                    <li contenteditable="true"><strong>System Integration:</strong> Secure connection of order forms to Castel's internal CRM or email systems with SSL encryption.</li>
+                    <li contenteditable="true"><strong>Training & Documentation:</strong> Comprehensive training for Marketing and I.T. teams, including written documentation for ongoing management.</li>
+                    <li contenteditable="true"><strong>Testing & Quality Assurance:</strong> Rigorous testing across multiple devices, browsers, and network conditions to ensure optimal performance.</li>
+                </ul>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">3. PROJECT TIMELINE</h2>
+                <p contenteditable="true">The project will be completed in <strong>4 weeks</strong> following this schedule:</p>
+                
+                <h3 contenteditable="true">Week 1: Content Alignment</h3>
+                <ul>
+                    <li contenteditable="true">Data migration and content porting</li>
+                    <li contenteditable="true">Pricing engine configuration</li>
+                    <li contenteditable="true">Geographic mapping setup</li>
+                    <li contenteditable="true">Milestone: Content structure approved</li>
+                </ul>
+
+                <h3 contenteditable="true">Week 2-3: System Integration</h3>
+                <ul>
+                    <li contenteditable="true">B2B order form development</li>
+                    <li contenteditable="true">Security implementation (SSL, authentication)</li>
+                    <li contenteditable="true">Mobile optimization and testing</li>
+                    <li contenteditable="true">Milestone: Functional prototype ready for review</li>
+                </ul>
+
+                <h3 contenteditable="true">Week 4: Launch & Training</h3>
+                <ul>
+                    <li contenteditable="true">Final testing and quality assurance</li>
+                    <li contenteditable="true">Live deployment to production domain</li>
+                    <li contenteditable="true">Staff training session</li>
+                    <li contenteditable="true">Milestone: Project completion and handover</li>
+                </ul>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">4. INVESTMENT & PAYMENT TERMS</h2>
+                <p style="text-align: center; font-size: 1.8rem; color: var(--electric-cyan); font-family: var(--font-display); margin: 2rem 0;" contenteditable="true">
+                    <strong>TOTAL INVESTMENT: MWK 1,800,000.00</strong>
+                </p>
+
+                <table class="investment-table">
+                    <thead>
+                        <tr>
+                            <th>PAYMENT PHASE</th>
+                            <th>AMOUNT</th>
+                            <th>PERCENTAGE</th>
+                            <th>TRIGGER</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td contenteditable="true"><strong>Commitment Fee</strong></td>
+                            <td contenteditable="true" class="amount">MWK 900,000</td>
+                            <td contenteditable="true">50%</td>
+                            <td contenteditable="true">Upon contract signing and project initiation</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true"><strong>Completion Fee</strong></td>
+                            <td contenteditable="true" class="amount">MWK 900,000</td>
+                            <td contenteditable="true">50%</td>
+                            <td contenteditable="true">30 days after live deployment and training completion</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p contenteditable="true" style="margin-top: 2rem;">
+                    <strong>Payment Method:</strong> Bank transfer to designated business account (details to be provided upon signing).
+                </p>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">5. DELIVERABLES INCLUDED</h2>
+                <ul>
+                    <li contenteditable="true"><strong>Website Platform:</strong> Fully functional, mobile-responsive website with all features outlined in the proposal</li>
+                    <li contenteditable="true"><strong>Source Code:</strong> Complete codebase transferred to Castel's repositories upon final payment</li>
+                    <li contenteditable="true"><strong>Design Assets:</strong> All logos, graphics, and brand materials in editable formats</li>
+                    <li contenteditable="true"><strong>Documentation:</strong> User manuals, technical documentation, and maintenance guides</li>
+                    <li contenteditable="true"><strong>Training:</strong> On-site or virtual training session (4 hours minimum)</li>
+                    <li contenteditable="true"><strong>Support Credits:</strong> 5 major updates or feature additions (valid for 3 years)</li>
+                    <li contenteditable="true"><strong>Consultancy:</strong> 12 months of strategic digital consultancy</li>
+                </ul>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">6. CLIENT RESPONSIBILITIES</h2>
+                <p contenteditable="true">Castel Malawi Ltd. agrees to provide:</p>
+                <ul>
+                    <li contenteditable="true"><strong>Content & Data:</strong> All necessary text, images, pricing information, and distributor details within 3 business days of request</li>
+                    <li contenteditable="true"><strong>Timely Feedback:</strong> Review and approval of deliverables within 48 hours to maintain project timeline</li>
+                    <li contenteditable="true"><strong>Hosting Infrastructure:</strong> Domain registration and hosting services (recommendations will be provided)</li>
+                    <li contenteditable="true"><strong>Access Credentials:</strong> Necessary login credentials for CRM, email systems, and existing web infrastructure</li>
+                    <li contenteditable="true"><strong>Point of Contact:</strong> Designated project manager with decision-making authority</li>
+                </ul>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">7. PERFORMANCE GUARANTEES</h2>
+                <ul>
+                    <li contenteditable="true"><strong>Page Load Speed:</strong> Average load time under 3 seconds on 3G networks</li>
+                    <li contenteditable="true"><strong>Mobile Compatibility:</strong> Fully functional on devices with Android 6.0+ and iOS 12+</li>
+                    <li contenteditable="true"><strong>Uptime:</strong> 99.5% uptime guarantee (subject to hosting provider SLA)</li>
+                    <li contenteditable="true"><strong>Security:</strong> SSL certificate implementation and secure data handling practices</li>
+                    <li contenteditable="true"><strong>Browser Support:</strong> Chrome, Firefox, Safari, and Edge (latest 2 versions)</li>
+                </ul>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">8. POST-LAUNCH SUPPORT</h2>
+                <p contenteditable="true">Following the successful launch, the development team provides:</p>
+                <ul>
+                    <li contenteditable="true"><strong>Bug Fixes:</strong> 30 days of complimentary bug fixes for issues arising from the initial build</li>
+                    <li contenteditable="true"><strong>Minor Updates:</strong> Unlimited content updates (text, images) for the first 60 days</li>
+                    <li contenteditable="true"><strong>Emergency Support:</strong> Priority response for critical issues (response within 4 hours)</li>
+                    <li contenteditable="true"><strong>Update Credits:</strong> 5 major feature updates or structural changes over 3 years</li>
+                    <li contenteditable="true"><strong>Annual Consultancy:</strong> Strategic advice on digital trends and optimization opportunities</li>
+                </ul>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">9. CHANGE MANAGEMENT</h2>
+                <p contenteditable="true">
+                    Any changes to the agreed scope that require additional development time will be documented 
+                    through a Change Request Form. Additional costs will be calculated at an hourly rate of 
+                    <strong>MWK 25,000/hour</strong> and must be approved in writing before work commences.
+                </p>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">10. INTELLECTUAL PROPERTY</h2>
+                <ul>
+                    <li contenteditable="true">Upon final payment, all custom code and design assets become the exclusive property of Castel Malawi Ltd.</li>
+                    <li contenteditable="true">Third-party libraries and frameworks remain under their respective open-source licenses</li>
+                    <li contenteditable="true">The development team retains the right to use the project in their portfolio (with client permission)</li>
+                </ul>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">11. TERMINATION CLAUSE</h2>
+                <p contenteditable="true">
+                    Either party may terminate this agreement with 14 days written notice. In the event of termination:
+                </p>
+                <ul>
+                    <li contenteditable="true">All completed work up to the termination date will be delivered to the client</li>
+                    <li contenteditable="true">Payment for completed phases is non-refundable</li>
+                    <li contenteditable="true">Partial work in the current phase will be billed on a pro-rata basis</li>
+                </ul>
+            </div>
+
+            <div class="doc-section">
+                <h2 contenteditable="true">12. SIGNATURES</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem;">
+                    <div>
+                        <p contenteditable="true"><strong>For Development Team:</strong></p>
+                        <p contenteditable="true">Name: _______________________</p>
+                        <p contenteditable="true">Signature: ___________________</p>
+                        <p contenteditable="true">Date: ________________________</p>
+                    </div>
+                    <div>
+                        <p contenteditable="true"><strong>For Castel Malawi Ltd.:</strong></p>
+                        <p contenteditable="true">Name: _______________________</p>
+                        <p contenteditable="true">Signature: ___________________</p>
+                        <p contenteditable="true">Date: ________________________</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0; padding: 2rem; background: var(--cyan-subtle); border-radius: 12px; border: 1px solid var(--glass-border);">
+            <p style="color: var(--electric-cyan); font-size: 0.9rem; margin-bottom: 1rem;">
+                📝 <strong>EDITABLE DOCUMENT</strong> - Click any text to edit. Export as PDF when ready.
+            </p>
+            <button onclick="generatePDF()" class="btn" style="cursor: pointer;">
+                EXPORT FINAL AGREEMENT
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // PDF Generation Function
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF('p', 'mm', 'a4');
+            
+            // Page setup
+            const pageWidth = 210;
+            const pageHeight = 297;
+            const margin = 20;
+            const maxWidth = pageWidth - 2 * margin;
+            let yPosition = margin;
+            
+            // Helper function to add text with wrapping
+            function addText(text, fontSize, isBold = false, isCenter = false) {
+                doc.setFontSize(fontSize);
+                doc.setFont('helvetica', isBold ? 'bold' : 'normal');
+                
+                const lines = doc.splitTextToSize(text, maxWidth);
+                
+                lines.forEach(line => {
+                    if (yPosition > pageHeight - margin) {
+                        doc.addPage();
+                        yPosition = margin;
+                    }
+                    
+                    const xPosition = isCenter ? pageWidth / 2 : margin;
+                    const align = isCenter ? 'center' : 'left';
+                    doc.text(line, xPosition, yPosition, { align: align });
+                    yPosition += fontSize * 0.5;
+                });
+                
+                yPosition += 3;
+            }
+            
+            // Extract content
+            const sections = document.querySelectorAll('.doc-section');
+            
+            sections.forEach((section, index) => {
+                // Get section content
+                const heading = section.querySelector('h2');
+                const paragraphs = section.querySelectorAll('p');
+                const lists = section.querySelectorAll('ul li');
+                const heading3 = section.querySelectorAll('h3');
+                
+                // Add heading if exists
+                if (heading && index === 0) {
+                    const h1 = section.querySelector('h1');
+                    if (h1) {
+                        addText(h1.innerText, 18, true, true);
+                        yPosition += 5;
+                    }
+                }
+                
+                if (heading) {
+                    addText(heading.innerText, 14, true);
+                }
+                
+                // Add paragraphs
+                paragraphs.forEach(p => {
+                    if (p.innerText.trim() !== '') {
+                        addText(p.innerText, 11);
+                    }
+                });
+                
+                // Add subheadings
+                heading3.forEach(h3 => {
+                    addText(h3.innerText, 12, true);
+                });
+                
+                // Add list items
+                lists.forEach(li => {
+                    const text = '• ' + li.innerText;
+                    addText(text, 10);
+                });
+                
+                yPosition += 5;
+            });
+            
+            // Save the PDF
+            const date = new Date().toISOString().split('T')[0];
+            doc.save(`Castel-WRLD_SLA_${date}.pdf`);
+        }
+        
+        // Visual feedback for editable elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const editables = document.querySelectorAll('[contenteditable="true"]');
+            
+            editables.forEach(el => {
+                el.addEventListener('focus', function() {
+                    this.style.outline = '2px solid var(--electric-cyan)';
+                });
+                
+                el.addEventListener('blur', function() {
+                    this.style.outline = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
