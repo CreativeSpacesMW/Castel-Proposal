@@ -8,13 +8,28 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="logo-glow"></div>
+    <header class="header" style="position: relative;"> 
+        
+        <div class="logo-glow" style="
+            position: absolute; 
+            top: -45px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            z-index: 99;
+            width: 200px;
+            height: 200px;
+        ">
+            <img src="castel-logo.svg" alt="Castel Malawi Logo" style="width: 80%; height: auto;">
+        </div>
+
+            
+        </header>
+        <section class="intro" style="text-align: center; margin-top: 4rem;">
             <h1>CASTEL-WRLD: THE EVOLUTION</h1>
             <p style="font-size: 1.2rem; color: var(--electric-cyan); font-family: var(--font-display); letter-spacing: 3px;">
                 TRANSITIONING FROM STATIC TO DIGITAL DOMINANCE
             </p>
-        </header>
+        </section>
 
         <div class="grid-2x2">
             <!-- Block 1: The Blueprint -->
